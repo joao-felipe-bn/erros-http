@@ -18,7 +18,7 @@ public class ErrorController {
     private final TrataExcecaoBusiness trataExcecao;
 
     @GetMapping()
-    public ResponseEntity<ErrorHttpRetornoDto> error100(@RequestParam ("httpCode") Integer httpCode) {
+    public ResponseEntity<ErrorHttpRetornoDto> tratarExcecao(@RequestParam ("httpCode") Integer httpCode) {
         return new ResponseEntity<>(trataExcecao.tratarExcecao(httpCode.toString()),HttpStatus.OK);
     }
 

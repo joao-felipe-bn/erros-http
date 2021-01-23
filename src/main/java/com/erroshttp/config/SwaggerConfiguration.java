@@ -27,7 +27,7 @@ public class SwaggerConfiguration {
     private ApiInfo metaInfo(){
         return new ApiInfoBuilder()
                 .title("ERROS HTTP")
-                .description("Prova de Conceito para demonstrar as alternativas para tratamento de erros com spring e java.")
+                .description("Prova de Conceito para demonstrar como fazer tratamento de erros com spring e java.")
                 .build();
     }
 
